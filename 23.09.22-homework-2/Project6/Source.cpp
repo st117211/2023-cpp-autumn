@@ -1,31 +1,30 @@
 #include <iostream>
-#include <cmath>
 
 int main()
 {
     int k = 0;
     int m = 0;
     int n = 0;
-    int result = 0;
+    int a = 0;
 
     std::cin >> k;
     std::cin >> m;
     std::cin >> n;
 
-    if (k == 0 || m == 0 || n == 0)
+    if (n <= k)
     {
-        std::cout << 0 << std::endl;
-        exit(0);
+        a = 2 * m;
     }
-    else if (n <= k)
+    else if (n * 2 % k == 0)
     {
-        std::cout << m * 2 << std::endl;
-        exit(0);
+        a = m * (n * 2 / k);
+    }
+    else
+    {
+        a = m * (1 + (n * 2 / k));
     }
 
-    result = ceil((n * 2) / k);
-
-    std::cout << result * m << std::endl;
+    std::cout << a << std::endl;
 
     return EXIT_SUCCESS;
 }

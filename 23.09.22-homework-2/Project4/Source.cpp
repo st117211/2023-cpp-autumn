@@ -21,39 +21,48 @@ int main(int argc, char* argv[])
 		t5 = n / 60;
 		n = n - t5 * 60;
 	}
-	if (n * cost4 / 20 >= cost5 && n > 20)
+	if (n >= 36)
 	{
 		t5 += 1;
-		n = 0 ;
+		std::cout << t1 << " " << t2 << " " << t3 << " " << t4 << " " << t5 << std::endl;
+		return EXIT_SUCCESS;
 	}
-	if (n / 20 != 0 && (n * cost4 / 20 < cost5))
-	{
-		t4 = n / 20;
-		n = n - t4 * 20;
-	}
-	if (n * cost3 / 10 >= cost4 && n > 10)
+	if (n < 36 && n > 29)
 	{
 		t4 += 1;
-		n = 0;
+		t3 += 1;
+		t2 += (n % 10) / 5;
+		t1 += (n % 10) - (t2 * 5);
 	}
-	if (n / 10 != 0 && (n * cost3 / 10 < cost4) && ((n * cost3 / 10) < (n * cost2 / 5)))
+	if (n == 29)
 	{
-		t3 = n / 10;
-		n = n - t4 * 10;
+		t4 += 1;
+		t3 += 1;
 	}
-	if (n * cost2 / 5 >= cost3 && n > 5)
+	if (n < 29 && n > 19)
+	{
+		t4 += 1;
+		t2 += (n % 10) / 5;
+		t1 += (n % 10) - (t2 * 5);
+	}
+	if (n <= 19 && n > 17)
+	{
+		t4 += 1;
+	}
+	if (n <= 17 && n > 9)
 	{
 		t3 += 1;
-		n = 0;
+		t2 += (n % 10) / 5;
+		t1 += (n % 10) - (t2 * 5);
 	}
-	if (n / 5 != 0 && (n * cost2 / 5 < cost3))
+	if (n == 9)
+	{
+		t3 += 1;
+	}
+	if (n < 9)
 	{
 		t2 = n / 5;
-		n = n - t2 * 5;
-	}
-	if (n < 5 && n > 1)
-	{
-		t1 = n;
+		t1 = n - t2 * 5;
 	}
 
 	std::cout << t1 << " " << t2 << " " << t3 << " " << t4 << " " << t5 << std::endl;
