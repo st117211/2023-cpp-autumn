@@ -3,11 +3,6 @@
 int main(int argc, char* argv[])
 {
 	int n = 0;
-	int cost1 = 15;
-	int cost2 = 70;
-	int cost3 = 125;
-	int cost4 = 230;
-	int cost5 = 440;
 	int t1 = 0;
 	int t2 = 0;
 	int t3 = 0;
