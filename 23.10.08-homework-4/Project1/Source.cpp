@@ -15,7 +15,6 @@ int main(int argc, char** argv)
 		std::cin >> b;
 
 		*(a + i) = b;
-
 	}
 	for (int i = 0; i < n; ++i)
 	{
