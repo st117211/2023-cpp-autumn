@@ -3,7 +3,6 @@
 
 int main(int argc, char** argv)
 {
-	int max = 0;
 	int n = 0;
 	std::cin >> n;
 
@@ -17,6 +16,7 @@ int main(int argc, char** argv)
 		*(a + i) = b;
 	}
 
+	int max = 0;
 	for (int i = 0; i < n; ++i)
 	{
 		if (*(a + i) > max)

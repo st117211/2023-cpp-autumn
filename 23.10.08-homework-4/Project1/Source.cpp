@@ -3,7 +3,6 @@
 
 int main(int argc, char** argv)
 {
-	int res = 0;
 	int n = 0;
 	std::cin >> n;
 
@@ -16,6 +15,8 @@ int main(int argc, char** argv)
 
 		*(a + i) = b;
 	}
+
+	int res = 0;
 	for (int i = 0; i < n; ++i)
 	{
 		if (*(a + i) >= 0)

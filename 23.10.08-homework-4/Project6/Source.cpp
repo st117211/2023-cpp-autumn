@@ -3,10 +3,6 @@
 
 int main(int argc, char** argv)
 {
-	int num_max = 0;
-	int max = 0;
-	int num_min = 0;
-	int min = 0;
 	int n = 0;
 	std::cin >> n;
 
@@ -20,6 +16,10 @@ int main(int argc, char** argv)
 		*(a + i) = b;
 	}
 
+	int num_max = 0;
+	int max = 0;
+	int num_min = 0;
+	int min = 0;
 	for (int i = 0; i < n; ++i)
 	{
 		if (*(a + i) >= max)
