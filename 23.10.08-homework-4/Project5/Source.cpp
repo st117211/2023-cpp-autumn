@@ -16,9 +16,9 @@ int main(int argc, char** argv)
 		*(a + i) = b;
 	}
 
-	for (int i = 1; i <= n; ++i)
+	for (int i = 0; i < n; ++i)
 	{
-		std::cout << *(a + n - i) << " ";
+		std::cout << *(a + n - 1 - i) << " ";
 	}
 
 	free(a);
