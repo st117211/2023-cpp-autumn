@@ -13,11 +13,11 @@ int main(int argc, char** argv)
 	lyche zadachy dodelau
 	*/
 
-	//for (int i = 0; i <= abs(2 * n); ++i)													  //
-	//{																						  //
-	//	std::cout << std::max(( i * n / abs(n)), ((abs(2 * n) - i) * n / abs(n))) << " ";	  // blin a mozno kak to tak eto sdelat
-	//}																						  // v odny strochky a to ne polychaetsa
-
+	//for (int i = 0; i <= abs(2 * n); ++i)													//blin a mozno  																				
+	//{																						//kak to tak eto sdelat
+	//	std::cout << std::max(( i * n / abs(n)), ((abs(2 * n) - i) * n / abs(n))) << " ";	//v odny strochky 
+	//}																						//a to ne polychaetsa
+	
 	if (n > 0)
 	{
 		for (int i = 0; i <= abs(2 * n); ++i)
