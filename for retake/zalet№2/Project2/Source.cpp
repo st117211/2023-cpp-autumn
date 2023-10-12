@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 	//for (int i = 0; i <= abs(2 * n); ++i)													  //
 	//{																						  //
 	//	std::cout << std::max(( i * n / abs(n)), ((abs(2 * n) - i) * n / abs(n))) << " ";	  // blin a mozno kak to tak eto sdelat
-	//}																						  // a to ne polychaetsa
+	//}																						  // v odny strochky a to ne polychaetsa
 
 	if (n > 0)
 	{
